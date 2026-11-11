@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#171717;background:#f4f4f2;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select{font:inherit}button{cursor:pointer}.auth-shell{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 15% 15%,#dededb,transparent 35%),#f2f2ef}.auth-card{background:#fff;border:1px solid #e8e8e4;border-radius:22px;padding:42px;width:min(100%,440px);box-shadow:0 18px 60px #0000000b}.brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.08em;font-size:13px}.brand small{display:block;color:#858585;font:600 9px 'DM Sans';letter-spacing:.18em;margin-top:3px}.brand-icon{display:grid;place-items:center;width:39px;height:39px;background:#171717;color:white;border-radius:12px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.16em;color:#777;margin-top:32px}.auth-card h1,.welcome h1{font:800 32px Manrope;margin:10px 0}.muted{color:#858585;font-size:13px}.stack{display:grid;gap:17px;margin-top:25px}.stack label{display:grid;gap:8px;font-size:12px;font-weight:700;color:#444}.stack input,.stack select{width:100%;border:1px solid #e2e2df;border-radius:9px;padding:13px 14px;background:#fff;outline:none;color:#222}.stack input:focus,.stack select:focus{border-color:#555;box-shadow:0 0 0 3px #0000000a}.primary,.secondary{border:0;border-radius:9px;padding:13px 17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px}.primary{background:#171717;color:white}.primary:hover{background:#333}.primary:disabled{opacity:.55;cursor:not-allowed}.secondary{background:#eee;color:#222}.switch{text-align:center;font-size:13px;color:#777;margin-top:23px}.switch button,.text-button{border:0;background:none;color:#111;font-weight:700}.demo-hint{text-align:center;font-size:11px;color:#999;margin-top:28px}.app-shell{min-height:100vh}.sidebar{width:250px;background:#171717;color:white;position:fixed;inset:0 auto 0 0;padding:28px 18px;display:flex;flex-direction:column}.sidebar .brand{padding:0 8px}.sidebar .brand small{color:#999}.nav-label{font-size:9px;letter-spacing:.17em;color:#777;font-weight:700;margin:54px 12px 13px}.nav-item{width:100%;display:flex;align-items:center;gap:12px;border:0;background:transparent;color:#aaa;padding:12px;border-radius:9px;text-align:left;font-size:13px;margin:3px 0}.nav-item.active,.nav-item:hover{background:#303030;color:#fff}.sidebar-bottom{margin-top:auto}.profile{display:flex;align-items:center;gap:10px;padding:14px 8px;border-top:1px solid #333;margin-bottom:8px}.profile b,.profile small{display:block}.profile b{font-size:12px}.profile small{font-size:10px;color:#999;margin-top:4px}.avatar{width:34px;height:34px;border-radius:50%;background:#e5e5e1;color:#222;display:grid;place-items:center;font-weight:800;font-size:13px;flex-shrink:0}.main{margin-left:250px;padding:32px 42px;max-width:1600px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.topbar .eyebrow{margin:0}.topbar h2{font:800 24px Manrope;margin:5px 0}.top-actions{display:flex;align-items:center;gap:15px}.secure{display:inline-flex;align-items:center;gap:6px;color:#666;font-size:11px}.icon-button{border:1px solid #e2e2df;background:#fff;border-radius:9px;padding:9px;display:grid;place-items:center}.welcome{border-radius:18px;background:#1b1b1b;color:white;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;min-height:190px}.welcome .eyebrow{margin:0;color:#aaa}.welcome h1{font-size:28px}.welcome p{color:#aaa;font-size:13px}.balance-box{background:#292929;border:1px solid #414141;border-radius:13px;padding:18px 22px;min-width:230px}.balance-box span,.balance-box small{display:block;color:#aaa;font-size:9px;letter-spacing:.13em}.balance-box strong{display:block;font:800 26px Manrope;margin:9px 0}.balance-box small{letter-spacing:0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}.stat-card,.panel{background:#fff;border:1px solid #e9e9e6;border-radius:14px;padding:21px}.stat-icon{width:34px;height:34px;background:#f0f0ed;border-radius:9px;display:grid;place-items:center;margin-bottom:15px}.stat-icon svg{width:17px}.stat-card small,.stat-card strong,.stat-card .muted{display:block}.stat-card>small{font-size:11px;color:#777}.stat-card strong{font:800 21px Manrope;margin:5px 0}.stat-card .muted{font-size:10px}.panel{margin-top:18px}.panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.panel-head h3{font:800 16px Manrope;margin:0}.panel-head p{margin:5px 0 0}.text-button{font-size:12px}.transaction-row,.beneficiary-row{display:flex;align-items:center;gap:13px;padding:14px 0;border-top:1px solid #f0f0ed}.tx-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center}.tx-icon.debit{background:#f2e9e7;color:#8a3930}.tx-icon.credit{background:#e8f1eb;color:#34734c}.grow{flex:1;min-width:0}.grow b,.grow small{display:block}.grow b{font-size:12px}.grow small{font-size:10px;color:#888;margin-top:4px;overflow-wrap:anywhere}.amount{text-align:right;font-weight:700;font-size:12px}.amount small{display:block;color:#999;font-size:9px;margin-top:4px}.negative{color:#8a3930}.positive{color:#34734c}.content-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:18px}.content-grid .panel{margin:0}.content-grid .stack{margin-top:8px}.beneficiary-row .grow b{font-size:12px}.remove{border:0;background:#f2f2ef;color:#777;border-radius:7px;padding:8px 10px;font-size:10px}.transfer-panel{max-width:650px;margin:0 auto}.transfer-panel .stack{max-width:470px}.transfer-note{font-size:11px;color:#777;background:#f5f5f2;padding:13px;border-radius:8px}.transfer-note b{color:#222}.review-card{background:#f4f4f1;border-radius:12px;padding:20px;text-align:center}.review-card span,.review-card small{display:block;font-size:9px;letter-spacing:.12em;color:#777}.review-card strong{display:block;font:800 27px Manrope;margin:8px}.review-card p{font-size:12px;margin:0 0 7px}.review-card small{letter-spacing:0}.empty{padding:28px;text-align:center;color:#999;font-size:12px}.alert{padding:12px 14px;border-radius:9px;font-size:12px;margin:12px 0}.error{background:#faeae8;color:#8a3930}.success{background:#e9f3eb;color:#316c43}footer{text-align:center;color:#aaa;font-size:10px;padding:30px 0 10px}.loading{padding:50px;text-align:center;color:#777}@media(max-width:900px){.sidebar{width:205px}.main{margin-left:205px;padding:25px}.content-grid{grid-template-columns:1fr}}@media(max-width:650px){.sidebar{position:static;width:auto;height:auto;padding:12px;display:block}.sidebar .brand{padding:4px}.nav-label,.sidebar-bottom{display:none}.sidebar>.nav-item{display:inline-flex;width:auto;padding:9px;font-size:11px}.main{margin:0;padding:18px}.topbar{margin-bottom:18px}.welcome{display:block;padding:23px}.balance-box{margin-top:20px}.stats-grid{grid-template-columns:1fr}.stat-card{padding:16px}.auth-card{padding:28px 22px}.top-actions .secure{display:none}}
+.account-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.account-number b {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.account-number button {
+  background: #444;
+  color: white;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.account-number button:hover {
+  background: #555;
+}
+/* Password visibility toggle */
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 65px !important;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #777;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.password-toggle:hover {
+  color: #fff;
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 65px !important;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.password-toggle:hover {
+  color: #000;
+}

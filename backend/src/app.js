@@ -1,0 +1,25 @@
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const authRoutes = require('./routes/auth.routes');
+const accountRoutes = require('./routes/account.routes');
+const beneficiaryRoutes = require('./routes/beneficiary.routes');
+const transferRoutes = require('./routes/transfer.routes');
+const transactionRoutes = require('./routes/transaction.routes');
+const { notFound, errorHandler } = require('./middleware/error.middleware');
+
+const app = express();
+app.use(helmet());
+app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173' }));
+app.use(express.json({ limit: '20kb' }));
+app.use('/api/auth', rateLimit({ windowMs: 15 * 60 * 1000, limit: 100 }), authRoutes);
+app.use('/api', rateLimit({ windowMs: 15 * 60 * 1000, limit: 250 }));
+app.get('/api/health', (_req, res) => res.json({ status: 'ok', service: 'banking-api' }));
+app.use('/api/accounts', accountRoutes);
+app.use('/api/beneficiaries', beneficiaryRoutes);
+app.use('/api/transfers', transferRoutes);
+app.use('/api/transactions', transactionRoutes);
+app.use(notFound);
+app.use(errorHandler);
+module.exports = app;
