@@ -74,7 +74,6 @@
   .top-actions .secure{
     display:none;
   }
-}
 .main{margin:0;padding:18px}.topbar{margin-bottom:18px}.welcome{display:block;padding:23px}.balance-box{margin-top:20px}.stats-grid{grid-template-columns:1fr}.stat-card{padding:16px}.auth-card{padding:28px 22px}.top-actions .secure{display:none}}
 .account-number {
   display: flex;
